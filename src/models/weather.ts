@@ -1,4 +1,4 @@
-export interface ISunData {
+export interface SunDataModel {
   aste: string; // 천문박명(저녁)
   astm: string; // 천문박명(아침)
   civile: string; // 시민박명(저녁)
@@ -19,8 +19,8 @@ export interface ISunData {
   suntransit: number; // 일중
 }
 
-export interface IGetSunDataResponse {
-  items: ISunData[];
+export interface GetSunDataResponseModel {
+  items: SunDataModel[];
   numOfRows: number;
   pageNo: number;
   totalCount: number;

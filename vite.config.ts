@@ -12,6 +12,10 @@ export default defineConfig({
   ],
   resolve: {
     alias: [
+      { find: '@assets', replacement: '/src/assets' },
+      { find: '@components', replacement: '/src/components' },
+      { find: '@models', replacement: '/src/models' },
+      { find: '@routes', replacement: '/src/routes' },
       { find: '@services', replacement: '/src/services' },
       { find: '@styles', replacement: '/src/styles' },
       { find: '@', replacement: '/src' },
